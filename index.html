@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Recipe Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .category-icon {
+      font-size: 2rem;
+      margin: 0.5rem;
+    }
+    .subscribe-section {
+      background-color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-light py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div>
+          <a href="index.html" class="text-dark text-decoration-none">
+            <h2 class="m-0">Foodieland</h2>
+          </a>
+        </div>
+  
+        <!-- Navigation Menu -->
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="recipe.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="about-us.html">About us</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <!-- Social Media Icons -->
+        <div class="d-flex">
+          <a href="https://www.instagram.com" target="_blank" class="text-dark mx-2">
+            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="text-dark mx-2">
+            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="text-dark mx-2">
+            <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Header -->
+  <div class="p-3 text-center" style="color: #FF5733;">
+   
+    <section class="recipe-highlight bg-light p-4 rounded shadow">
+      <div class="container">
+        <button class="btn btn-danger btn-sm text-light border-0" onclick="alert('Hot Recipes Clicked!')">
+          Hot Recipes
+        </button>
+        
+        <h1 class="display-5 fw-bold mb-3">Spicy Delicious Chicken Wings</h1>
+        <p class="text-muted mb-4">
+          Discover the joy of cooking, the art of plating, and the flavors that make life delicious. Whether you’re a passionate home cook, a curious foodie, or someone looking for quick and easy recipes, <b>Foodieland</b> is your ultimate destination for all things food!
+        </p>
+        <div class="recipe-meta d-flex gap-3 mb-4">
+          <span class="text-secondary">
+            <i class="bi bi-clock"></i> 30 Minutes
+          </span>
+          <span class="text-secondary">
+            <i class="bi bi-egg-fried"></i> Chicken
+          </span>
+        </div>
+        <div class="author d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <img src="john.jpg" alt="John Smith" class="rounded-circle me-3" style="width: 50px; height: 50px;">
+            <div>
+              <p class="mb-0 fw-bold">John Smith</p>
+              <p class="mb-0 text-muted">15 March 2022</p>
+            </div>
+          </div>
+          <a href="recipe.html" class="btn btn-primary ms-3">View Recipes</a>
+
+        </div>
+        
+      </div>
+    </section>
+    
+  </div>
+
+  <!-- Categories Section -->
+  <section class="container my-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="mb-0">Categories</h2>
+      <button class="btn btn-primary">View All Categories</button>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap gap-4">
+      <!-- Category Items -->
+      <div class="category-item text-center p-3">
+        <img src="breakfast.jpg" alt="Breakfast" class="img-fluid rounded mb-2" style="width: 100px; height: 80px;">
+        <p class="fw-bold">Breakfast</p>
+      </div>
+      <div class="category-item text-center p-3">
+        <img src="vegan.jpg" alt="Vegan" class="img-fluid rounded mb-2" style="width: 100px; height: 80px;">
+        <p class="fw-bold">Vegan</p>
+      </div>
+      <div class="category-item text-center p-3">
+        <img src="meat.jpg" alt="Meat" class="img-fluid rounded mb-2" style="width: 100px; height: 80px;">
+        <p class="fw-bold">Meat</p>
+      </div>
+      <div class="category-item text-center p-3">
+        <img src="dessert.webp" alt="Dessert" class="img-fluid rounded mb-2" style="width: 100px; height: 80px;">
+        <p class="fw-bold">Dessert</p>
+      </div>
+      <div class="category-item text-center p-3">
+        <img src="lunch.jpg" alt="Lunch" class="img-fluid rounded mb-2" style="width: 100px; height: 80px;">
+        <p class="fw-bold">Lunch</p>
+      </div>
+      <div class="category-item text-center p-3">
+        <img src="chocolate.webp" alt="Chocolate" class="img-fluid rounded mb-2" style="width: 100px; height: 100px;">
+        <p class="fw-bold">Chocolate</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Recipe Cards -->
+  <section class="container my-4">
+    <h2 class="text-center mb-4">Simple and Tasty Recipes</h2>
+    <p class="text-muted mb-4 text-center">Start your day with the fluffy goodness of classic pancakes! This quick and easy recipe is perfect for breakfast or brunch, and it takes just a few ingredients you already have at home.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="chickenwings.jpg" class="card-img-top" alt="Recipe 1">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Wings</h5>
+            <p class="card-text">Quick and easy chicken wings recipe.</p>
+            <a href="recipe.html" class="btn btn-primary">View Recipe</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="vegpasta.jpg" class="card-img-top" alt="Recipe 2">
+          <div class="card-body">
+            <h5 class="card-title">Vegetarian Pasta</h5>
+            <p class="card-text">A healthy vegetarian option.</p>
+            <a href="recipe.html" class="btn btn-primary">View Recipe</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="tacos.jpg" class="card-img-top" alt="Recipe 3">
+          <div class="card-body">
+            <h5 class="card-title">Tacos</h5>
+            <p class="card-text">Delicious Mexican tacos recipe.</p>
+            <a href="recipe.html" class="btn btn-primary">View Recipe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-center my-5">
+    <h3 class="mb-3">Check out @foodieland on Instagram</h3>
+    <p class="text-muted mb-4 text-center">Discover mouthwatering recipes, vibrant food photography, and behind-the-scenes moments that celebrate the joy of cooking and eating. Whether you're craving sweet treats, savory meals, or healthy bites, our Instagram feed is filled with inspiration for every foodie. Follow us for daily updates and exclusive content that brings Foodieland's kitchen to life. Click below to join the journey and never miss a delicious moment!</p>
+    <div class="container">
+      <div class="row g-3">
+        <!-- Food Image 1 -->
+        <div class="col-6 col-md-4">
+          <a href="https://foodielandnm.com/" target="_blank">
+            <img src="food1.jpg" alt="Delicious Dish 1" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Food Image 2 -->
+        <div class="col-6 col-md-4">
+          <a href="https://foodielandnm.com/" target="_blank">
+            <img src="food2.jpg" alt="Delicious Dish 2" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Food Image 3 -->
+        <div class="col-6 col-md-4">
+          <a href="https://foodielandnm.com/" target="_blank">
+            <img src="food3.jpg" alt="Delicious Dish 3" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Food Image 4 -->
+        <div class="col-6 col-md-4">
+          <a href="https://foodielandnm.com/" target="_blank">
+            <img src="food4.jpg" alt="Delicious Dish 4" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Food Image 5 -->
+        <div class="col-6 col-md-4">
+          <a href="https://foodielandnm.com/" target="_blank">
+            <img src="food5.jpg" alt="Delicious Dish 5" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Food Image 6 -->
+        <div class="col-6 col-md-4">
+          <a href="https://foodielandnm.com/" target="_blank">
+            <img src="food6.jpg" alt="Delicious Dish 6" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Shortened Instagram Button -->
+    <a href="https://www.instagram.com" target="_blank" class="btn btn-danger text-light d-inline-flex align-items-center gap-2 mt-3">
+      <i class="bi bi-instagram" style="font-size: 1.5rem;"></i> Visit Our Instagram
+    </a>
+  </section>
+  
+
+  <!-- Subscribe Section -->
+  <section class="subscribe-section">
+    <h3>Subscribe for More Recipes</h3>
+    <form class="row g-3 justify-content-center">
+      <div class="col-auto">
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-success">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  
+</body>
+</html>
